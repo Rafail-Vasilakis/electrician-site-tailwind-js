@@ -13,17 +13,13 @@ A high-performance, mobile-first web application designed for local tradesmen (E
 - **Build Tool:** Vite
 - **Styling:** Tailwind CSS (recommended for fast UI dev)
 - **Deployment:** Vercel / Netlify
-
+- 
+**Prerequisites:**  Node.js
+  
 ## ⚙️ Setup
 1. `npm install`
 2. `cp .env.example .env`
 3. `npm run dev`
 
-**Prerequisites:**  Node.js
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
