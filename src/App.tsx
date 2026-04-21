@@ -45,9 +45,9 @@ export default function App() {
             <div className="bg-electric-yellow p-1.5 rotate-3 shrink-0 border-2 border-white">
               <Zap className="text-black w-6 h-6 sm:w-8 sm:h-8 fill-black" />
             </div>
-            <div className="min-w-0">
-              <h1 className="font-display text-xl sm:text-2xl tracking-tighter leading-none uppercase truncate text-white">ΗΛΕΚΤΡΟΛΟΓΟΣ ΜΑΡΟΥΣΙ</h1>
-              <p className="text-[9px] sm:text-[11px] font-black text-electric-yellow tracking-[0.2em] uppercase truncate">ΕΞΥΠΗΡΕΤΗΣΗ 24/7</p>
+            <div>
+              <h1 className="font-display text-lg sm:text-xl md:text-2xl tracking-tighter leading-none uppercase text-white">Μαριος Κορετσης - Ηλεκτρολογος Μαρουσι</h1>
+              <p className="text-[9px] sm:text-[11px] font-black text-electric-yellow tracking-[0.2em] uppercase mt-1">ΕΞΥΠΗΡΕΤΗΣΗ 24/7</p>
             </div>
           </div>
 
@@ -55,11 +55,11 @@ export default function App() {
             <a href="#services" className="text-xs font-black hover:text-electric-yellow transition-colors tracking-widest uppercase">ΥΠΗΡΕΣΙΕΣ</a>
             <a href="#contact" className="text-xs font-black hover:text-electric-yellow transition-colors tracking-widest uppercase">ΕΠΙΚΟΙΝΩΝΙΑ</a>
             <a 
-              href="tel:+306970000000" 
+              href="tel:+306972351429" 
               className="bg-electric-yellow text-black px-6 py-3 font-black text-sm flex items-center gap-2 hover:bg-white transition-colors border-2 border-black active:translate-y-0.5"
             >
               <Phone className="w-4 h-4 fill-black" />
-              697 XXX XXXX
+              697 235 1429
             </a>
           </nav>
 
@@ -85,9 +85,9 @@ export default function App() {
           <a href="#services" onClick={() => setIsMenuOpen(false)} className="font-display text-5xl hover:text-electric-yellow transition-colors">ΥΠΗΡΕΣΙΕΣ</a>
           <a href="#contact" onClick={() => setIsMenuOpen(false)} className="font-display text-5xl hover:text-electric-yellow transition-colors">ΕΠΙΚΟΙΝΩΝΙΑ</a>
           <div className="h-px w-20 bg-electric-yellow my-4"></div>
-          <a href="tel:+306970000000" className="w-full bg-electric-yellow text-black py-6 font-display text-3xl flex items-center justify-center gap-4 active:scale-95 transition-transform">
+          <a href="tel:+306972351429" className="w-full bg-electric-yellow text-black py-6 font-display text-3xl flex items-center justify-center gap-4 active:scale-95 transition-transform">
             <Phone className="w-8 h-8 fill-black" />
-            ΚΑΛΕΣΤΕ ΤΩΡΑ
+            697 235 1429
           </a>
         </div>
       )}
@@ -127,11 +127,11 @@ export default function App() {
               
               <div className="flex flex-col sm:flex-row gap-5">
                 <a 
-                  href="tel:+306970000000" 
+                  href="tel:+306972351429" 
                   className="bg-electric-yellow text-black px-8 py-6 font-display text-3xl sm:text-4xl active:translate-y-1 transition-all text-center flex items-center justify-center gap-4 border-4 border-black"
                 >
                   <Phone className="w-8 h-8 fill-black" />
-                  697 XXX XXXX
+                  697 235 1429
                 </a>
                 <a 
                   href="#contact" 
@@ -214,24 +214,27 @@ export default function App() {
               </p>
               
               <div className="grid gap-10">
-                <a href="tel:+306970000000" className="flex items-center gap-6 group">
+                <a href="tel:+306972351429" className="flex items-center gap-6 group">
                   <div className="w-16 h-16 bg-electric-yellow flex items-center justify-center shrink-0 border-4 border-white group-hover:bg-white transition-colors">
                     <Phone className="text-black w-8 h-8 fill-black" />
                   </div>
-                  <div className="text-3xl sm:text-4xl font-display uppercase tracking-tighter hover:text-electric-yellow transition-colors leading-none">697 XXX XXXX</div>
+                  <div className="text-3xl sm:text-4xl font-display uppercase tracking-tighter hover:text-electric-yellow transition-colors leading-none">697 235 1429</div>
                 </a>
                 <div className="flex items-center gap-6">
                   <div className="w-16 h-16 bg-white flex items-center justify-center shrink-0 text-black border-4 border-electric-yellow">
                     <MapPin className="w-8 h-8" />
                   </div>
-                  <div className="text-3xl sm:text-4xl font-display uppercase tracking-tighter leading-none">ΜΑΡΟΥΣΙ, ΑΤΤΙΚΗ</div>
+                  <div className="flex flex-col">
+                    <div className="text-2xl sm:text-3xl font-display uppercase tracking-tighter leading-none mb-1 break-words">ΠΡΙΓΚΙΠΟΝΝΗΣΩΝ 19</div>
+                    <div className="text-sm sm:text-base font-bold uppercase tracking-widest text-slate-400 break-words">ΣΥΝΟΙΚΙΑ ΕΡΓΑΤΙΚΩΝ ΚΑΤΟΙΚΙΩΝ<br/>151 24, ΜΑΡΟΥΣΙ</div>
+                  </div>
                 </div>
               </div>
 
               {/* Map (Industrial BW) */}
               <div className="mt-16 sm:mt-24 h-72 border-4 border-electric-yellow grayscale invert opacity-50 hover:opacity-100 transition-all shadow-[10px_10px_0px_0px_rgba(250,204,21,0.2)]">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12557!2d23.805!3d38.048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgr!4v1713698483" 
+                  src="https://www.google.com/maps?q=Prigkiponison+19,+Marousi+151+24,+Greece&output=embed" 
                   width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
@@ -274,7 +277,7 @@ export default function App() {
       {/* Footer (Hazard Stripes) */}
       <footer className="bg-black text-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8 sm:gap-10">
-          <div className="font-display text-2xl sm:text-3xl uppercase tracking-tighter text-center sm:text-left">© 2026 ΗΛΕΚΤΡΟΛΟΓΟΣ ΜΑΡΟΥΣΙ</div>
+          <div className="font-display text-2xl sm:text-3xl uppercase tracking-tighter text-center sm:text-left">© 2026 ΜΑΡΙΟΣ ΚΟΡΕΤΣΗΣ - ΗΛΕΚΤΡΟΛΟΓΟΣ ΜΑΡΟΥΣΙ</div>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-10 font-bold text-[10px] tracking-widest opacity-50 uppercase">
              <span>Powered by HighVoltage</span>
              <span>Security Guaranteed</span>
